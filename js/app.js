@@ -16,4 +16,22 @@ $(document).ready(function () {
 			$("aside.drawer-navigation").removeClass("drawer-navigation--active");
 		}
 	});
+
+	$(".s-track-recording__filter button").on("click", function () {
+		const attrFilter = $(this).data("filter");
+
+		$(".s-track-recording__filter button").removeClass("active");
+		$(this).addClass("active");
+
+		if (attrFilter !== "") {
+			$(".s-track-recording__card").hide();
+			$(".s-track-recording__card")
+				.filter(`[data-filter="${attrFilter}"]`)
+				.show();
+		} else {
+			$(".s-track-recording__card").show();
+		}
+
+		console.log(attrFilter);
+	});
 });

@@ -318,3 +318,101 @@ body {
         border-radius: 4px;
         padding: 20px;
         border-width: 0; }
+
+.s-track-recording {
+  background-color: #f6f6f6;
+  padding: 100px 0; }
+  .s-track-recording__header {
+    text-align: center; }
+    .s-track-recording__header h1 {
+      color: #142859;
+      font-weight: 900;
+      font-size: 60px;
+      line-height: 1; }
+    .s-track-recording__header h6 {
+      color: #142859;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1;
+      margin-top: 20px; }
+  .s-track-recording__filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 32px;
+    margin-bottom: 60px;
+    user-select: none; }
+    .s-track-recording__filter button {
+      display: inline-flex;
+      align-items: center;
+      height: 48px;
+      padding: 0 20px;
+      background-color: #02123a;
+      color: #fff;
+      font-weight: 800;
+      text-transform: uppercase; }
+      .s-track-recording__filter button.active {
+        background-color: #028250; }
+  .s-track-recording__card {
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    user-select: none; }
+    .s-track-recording__card__img img {
+      height: 320px;
+      width: 100%;
+      object-fit: cover; }
+    .s-track-recording__card__content {
+      padding: 32px 32px 0; }
+      .s-track-recording__card__content strong {
+        background-color: #005ba0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-transform: uppercase;
+        height: 28px;
+        padding: 0 8px;
+        font-size: 10px;
+        margin-bottom: 12px; }
+      .s-track-recording__card__content h3 {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 1; }
+      .s-track-recording__card__content p {
+        font-weight: 500;
+        margin-top: 12px; }
+      .s-track-recording__card__content ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-top: 20px; }
+        .s-track-recording__card__content ul li {
+          display: inline-flex;
+          flex-wrap: wrap;
+          align-items: center;
+          height: 32px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 32px;
+          font-size: 12px;
+          padding: 0 12px; }
+          .s-track-recording__card__content ul li i {
+            font-size: 12px;
+            width: 16px;
+            text-align: center;
+            margin-right: 4px; }
+    .s-track-recording__card__footer {
+      padding: 32px; }
+      .s-track-recording__card__footer a.c-btn {
+        background-color: #018150;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-transform: uppercase;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 10px;
+        margin-bottom: 14px;
+        font-weight: 600; }
